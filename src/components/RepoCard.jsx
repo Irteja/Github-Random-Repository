@@ -1,15 +1,10 @@
+import '../styles/RepoCard.css';
 
 const RepoCard = ({ repo }) => {
   if (!repo) return null;
 
   return (
-      <div style={{
-        border: "1px solid #ddd",
-        padding: "16px",
-        borderRadius: "8px",
-        marginTop: "20px",
-        maxWidth: "500px"
-      }}>
+      <div className="repo-card">
         <h2>{repo.full_name}</h2>
 
         <p>{repo.description || "No description available"}</p>

@@ -28,7 +28,8 @@ const Home = () => {
       <div style={{ marginTop: "10px" }}>
         <SearchButton
           onClick={handleSearch}
-          loading={!language || loading}
+          loading={loading}
+          disabled={!language}
         />
       </div>
 

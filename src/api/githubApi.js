@@ -3,7 +3,7 @@ const BASE_URL = "https://api.github.com";
 export const searchRepositories = async (language) => {
   const query = `language:${language}`;
 
-  const url = `${BASE_URL}/search/repositories?q=${query}&sort=starts&order=desc&per_page=50`;
+  const url = `${BASE_URL}/search/repositories?q=${query}&sort=stars&order=desc&per_page=50`;
 
   const response = await fetch(url);
 
@@ -12,8 +12,6 @@ export const searchRepositories = async (language) => {
   }
 
   const data = await response.json();
-
-  console.log(data.items);
 
   return data.items;
 };

@@ -1,8 +1,8 @@
 import React from 'react';
 
-const SearchButton = ({ onClick, loading }) => {
+const SearchButton = ({ onClick, loading, disabled }) => {
   return (
-    <button onClick={onClick} disabled={loading}>
+    <button onClick={onClick} disabled={disabled || loading}>
       {loading ? 'Searching...' : 'Find Random Repo'}
     </button>
   );

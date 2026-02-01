@@ -13,7 +13,7 @@ export const useRandomRepo = () => {
 
       const repos = await searchRepositories(language);
       
-      if(!repos || repos.length == 0){
+      if(!repos || repos.length === 0){
         throw new Error("No repositories found");
       }
 
