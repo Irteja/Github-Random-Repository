@@ -7,5 +7,4 @@ export const LANGUAGES = [
   "go",
   "rust",
   "cpp",
-  "c#"
 ];

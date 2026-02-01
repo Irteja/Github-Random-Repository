@@ -3,6 +3,7 @@ import '../styles/home.css';
 import { useRandomRepo } from '../hooks/useRandomRepo';
 import LanguageDropdown from '../components/LanguageDropdown';
 import SearchButton from '../components/SearchButton';
+import RepoCard from '../components/RepoCard';
 
 const Home = () => {
   const [language,setLanguage] = useState("");
@@ -35,7 +36,7 @@ const Home = () => {
       {error && <p style={{ color: "red" }}>{error}</p>}
 
       {repo && <RepoCard repo={repo} />}
-      
+
     </div>
   );
 };

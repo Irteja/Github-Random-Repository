@@ -12,7 +12,6 @@ const LanguageDropdown = ({ value, onChange }) => {
       <option value="go">Go</option>
       <option value="rust">Rust</option>
       <option value="cpp">C++</option>
-      <option value="c#">C#</option>
     </select>
   );
 };
