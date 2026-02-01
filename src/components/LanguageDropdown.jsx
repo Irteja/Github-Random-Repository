@@ -1,10 +1,19 @@
-import React from 'react';
 
-const LanguageDropdown = ({ selectedLanguage, onLanguageChange }) => {
+const LanguageDropdown = ({ value, onChange }) => {
   return (
-    <div className="language-dropdown">
-      {/* Dropdown implementation */}
-    </div>
+    <select value={value} onChange={(e) => onChange(e.target.value)}>
+      <option value="">Select Language</option>
+
+      <option value="javascript">JavaScript</option>
+      <option value="typescript">TypeScript</option>
+      <option value="python">Python</option>
+      <option value="java">Java</option>
+      <option value="csharp">C#</option>
+      <option value="go">Go</option>
+      <option value="rust">Rust</option>
+      <option value="cpp">C++</option>
+      <option value="c#">C#</option>
+    </select>
   );
 };
 

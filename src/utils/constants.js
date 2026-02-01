@@ -1,8 +1,11 @@
 export const LANGUAGES = [
-  'JavaScript',
-  'Python',
-  'Java',
-  'Go',
-  'Rust',
-  'TypeScript'
+  "javascript",
+  "typescript",
+  "python",
+  "java",
+  "csharp",
+  "go",
+  "rust",
+  "cpp",
+  "c#"
 ];

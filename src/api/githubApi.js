@@ -7,10 +7,13 @@ export const searchRepositories = async (language) => {
 
   const response = await fetch(url);
 
-  if(!response.ok){
+  if (!response.ok) {
     throw new Error("Failed to fetch data from github!");
   }
 
   const data = await response.json();
+
+  console.log(data.items);
+
   return data.items;
 };
